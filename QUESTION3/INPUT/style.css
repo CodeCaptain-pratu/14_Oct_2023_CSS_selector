@@ -1,0 +1,10 @@
+
+h1:before{
+    content:"Before ";
+    color:blue;
+}
+
+h1:after{
+    content:" After";
+    color:green;
+}
