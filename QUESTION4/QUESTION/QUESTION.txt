@@ -1,0 +1,5 @@
+QUESTION:Illustrate one example of a pseudo-class element selector hover example should include the following
+a) An example should be one HTML button tag
+b) When hovering the color should be changed and the shadow of the button should be added;
+c) Proper padding space should be given;
+d) The cursor style should also be changed to the pointer on hover
