@@ -1,0 +1,54 @@
+/* Part B: Using combinator selectors */
+
+/* a) Targeting all anchor tags and changing text color to red */
+nav a{
+    color:red;
+}
+/* b) Targeting only the first <h2> tag and changing text and background color */
+nav>h2:first-of-type{
+    color:#fff;
+    background-color: #333;
+}
+/* c) Targeting the first <p> tag and changing the text color to red */
+nav>p:first-of-type{
+    color: red;
+}
+
+
+/* Part C: Using attribute selectors */
+
+/* a) Targeting anchor tags with the "href" attribute and changing color to red, removing underline */
+a[href]{
+    color:red;
+    text-decoration: none;
+}
+
+/* b) Targeting anchor tag with the "class" attribute of "active" change the text color, and provide the text style properties with underlinined*/
+
+a[class="active"]{
+    color:blue;
+    text-decoration: underline;
+}
+
+/* c) Targeting anchor tag with "target" attribute value "_self" and changing background color */
+a[target="_self"]{
+    background-color:yellow;
+}
+
+/* Part D: Using pseudo selectors */
+
+/* a) Targeting the last <p> tag and adding "..." after its value */
+p:last-of-type::after{
+    content: "...";
+}
+
+/* b) Changing the color of bullet points without altering the list item values */
+li::marker{
+    color:blue;
+}
+
+/* c) Targeting the 2nd <p> tag, selecting its first letter, and applying styles */
+p:nth-of-type(2)::first-letter{
+    color: red;
+    font-size: 30px;
+}
